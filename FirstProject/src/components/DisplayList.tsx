@@ -1,5 +1,8 @@
 interface details{
-  items:{item:string,desc:string}[];  
+  items:{
+    item:string,
+    desc:string
+  }[];  
 }
 
 function DisplayList({items}:details){
