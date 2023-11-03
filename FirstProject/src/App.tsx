@@ -1,11 +1,8 @@
-// import { useState } from 'react'
-
 import './App.css'
 import DisplayList from './components/DisplayList';
 import DisplayComp from './components/DisplayComp';
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   const itemList = [
     {item:'abc',desc:'xyz'},
