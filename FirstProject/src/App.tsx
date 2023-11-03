@@ -1,14 +1,15 @@
-import './App.css'
+import './App.css';
 import DisplayList from './components/DisplayList';
 import DisplayComp from './components/DisplayComp';
+import LifecyclePrac from './components/lifecyclePrac';
 
 function App() {
 
   const itemList = [
-    {item:'abc',desc:'xyz'},
-    {item:'def',desc:'uvw'},
-    {item:'ghi',desc:'rst'},
-    {item:'klm',desc:'opq'},
+    {item:'useState',desc:'It allows us to track state in a function component'},
+    {item:'useEffect',desc:'It allows you to perform side effects in your components'},
+    {item:'useContext',desc:'It can be used together with the useState Hook to share state between deeply nested components'},
+    {item:'useCallback',desc:'It returns a memoized callback function.'},
   ]
 
 
@@ -19,6 +20,8 @@ function App() {
       <DisplayComp id={1} name='Kalpa' mobile='1827364182' email='abc@gmail.com'></DisplayComp>
       <br></br>
       <DisplayList items={itemList}></DisplayList>
+      <br></br>
+      <LifecyclePrac></LifecyclePrac>
       </div>
     </>
   )
